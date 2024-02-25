@@ -6,13 +6,13 @@ import apiService from './api/apiService '
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(true);
 
-  useEffect(async () => {
+  useEffect(() => {
 
-    try {
-      const result = await apiService.getItem('products', 1);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
+    // try {
+    //   const result = await apiService.getItem('products', 1);
+    // } catch (error) {
+    //   console.error('Error fetching data:', error);
+    // }
   }, [])
 
   return (
